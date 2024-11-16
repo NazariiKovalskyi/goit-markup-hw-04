@@ -40,7 +40,8 @@ img {
     margin: 0 auto;
 }
 
-/* header */
+     /* header */
+
 .page-header{
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -131,10 +132,11 @@ img {
     padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), 
-                url(../images/background/people-office\ 1\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/background/people-office.jpg);
     }
     
     
@@ -167,6 +169,7 @@ img {
         margin-right: auto;
         display: block;
         align-items: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
        
 
@@ -192,6 +195,7 @@ img {
             gap: 24px;
      }
 
+
     .advantages-header {
             font-weight: 500;
             font-size: 20px;
@@ -204,6 +208,17 @@ img {
     .advantages-item {
         width: calc((100%-72)/4);
     } 
+
+    .advantages-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
     .advantages-text {
             font-weight: 400;
             font-size: 16px;
